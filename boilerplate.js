@@ -41,7 +41,7 @@ async function install (context) {
 
   const name = parameters.third
   const spinner = print
-    .spin(`using the ${red('Infinite Red')} boilerplate v2 (code name 'Andross')`)
+    .spin(`using the ${red('Pyck inc.')} boilerplate v1 (code name 'pyck')`)
     .succeed()
 
   // attempt to install React Native or die trying
@@ -197,11 +197,11 @@ async function install (context) {
       })
     }
 
-    if (parameters.options.lint !== 'false') {
-      await system.spawn(`ignite add standard@"~>1.0.0" ${debugFlag}`, {
-        stdio: 'inherit'
-      })
-    }
+    // if (parameters.options.lint !== 'false') {
+    //   await system.spawn(`ignite add standard@"~>1.0.0" ${debugFlag}`, {
+    //     stdio: 'inherit'
+    //   })
+    // }
   } catch (e) {
     ignite.log(e)
     throw e

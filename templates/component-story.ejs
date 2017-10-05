@@ -1,0 +1,9 @@
+import React from 'react';
+import { storiesOf } from '@storybook/react-native';
+import { action } from '@storybook/addon-actions';
+import <%= props.name %> from '../../App/Components/<%= props.name %>';
+
+storiesOf('<%= props.name %>', module)
+  .add('replace me', () => (
+    <<%= props.name %>></<%= props.name %>>
+  ));
